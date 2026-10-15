@@ -6,7 +6,7 @@
 <a href="index.php">Назад</a>
 
 <p>1. Продано на сумму (доставленные):</p>
-<p><b><?php echo $totalRevenue; ?> руб.</b></p>
+<p><b><?php echo number_format($totalRevenue, 2, '.', ' '); ?> руб.</b></p>
 
 <p>2. Продажи по категориям:</p>
 <table border="1" cellpadding="5">
@@ -14,7 +14,7 @@
     <?php foreach ($revenueByCategory as $r) { ?>
     <tr>
         <td><?php echo htmlspecialchars($r['name']); ?></td>
-        <td><?php echo $r['itog']; ?></td>
+        <td><?php echo number_format($r['itog'], 2, '.', ' '); ?></td>
     </tr>
     <?php } ?>
 </table>
@@ -36,7 +36,7 @@
     <?php foreach ($top5Customers as $r) { ?>
     <tr>
         <td><?php echo htmlspecialchars($r['name']); ?></td>
-        <td><?php echo $r['itog']; ?></td>
+        <td><?php echo number_format($r['itog'], 2, '.', ' '); ?></td>
     </tr>
     <?php } ?>
 </table>
@@ -53,7 +53,7 @@
 </table>
 
 <p>6. Средний чек (доставленные):</p>
-<p><b><?php echo $averageCheck; ?> руб.</b></p>
+<p><b><?php echo number_format($averageCheck, 2, '.', ' '); ?> руб.</b></p>
 
 </body>
 </html>

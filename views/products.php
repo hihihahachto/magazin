@@ -13,20 +13,29 @@
 <form method="get">
     <input type="hidden" name="page" value="products">
 
-    <select name="fc">
-        <option value="">любая категория</option>
-        <?php foreach ($categories as $c) { ?>
-            <option value="<?php echo $c['id']; ?>"><?php echo htmlspecialchars($c['name']); ?></option>
-        <?php } ?>
-    </select>
+    <p>
+        Категория:
+        <select name="fc">
+            <option value="">любая</option>
+            <?php foreach ($categories as $c) { ?>
+                <option value="<?php echo $c['id']; ?>"><?php echo htmlspecialchars($c['name']); ?></option>
+            <?php } ?>
+        </select>
+    </p>
 
-    <label><input type="checkbox" name="fs" value="1"> есть на складе</label>
+    <p>
+        <label><input type="checkbox" name="fs" value="1"> есть на складе</label>
+    </p>
 
-    цена от <input type="number" step="0.01" name="min">
-    до <input type="number" step="0.01" name="max">
+    <p>
+        Цена от <input type="number" step="0.01" name="min">
+        до <input type="number" step="0.01" name="max">
+    </p>
 
-    <button type="submit">Отобрать</button>
-    <a href="index.php?page=products">Сбросить</a>
+    <p>
+        <button type="submit">Отобрать</button>
+        <a href="index.php?page=products">Сбросить</a>
+    </p>
 </form>
 
 <p>

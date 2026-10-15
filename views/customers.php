@@ -20,12 +20,16 @@
 </p>
 <form method="post">
     <input type="hidden" name="id" value="<?php if ($edit != null) echo $edit['id']; else echo 0; ?>">
-    <input type="text" name="name" placeholder="ФИО" required
-           value="<?php if ($edit != null) echo htmlspecialchars($edit['name']); ?>">
+
+    <input type="text" name="name" placeholder="Имя" required
+        value="<?php if ($edit != null) echo htmlspecialchars($edit['name']); ?>">
+
     <input type="email" name="email" placeholder="Почта" required
-           value="<?php if ($edit != null) echo htmlspecialchars($edit['email']); ?>">
+        value="<?php if ($edit != null) echo htmlspecialchars($edit['email']); ?>">
+
     <input type="text" name="phone" placeholder="Телефон"
-           value="<?php if ($edit != null) echo htmlspecialchars($edit['phone']); ?>">
+        value="<?php if ($edit != null) echo htmlspecialchars($edit['phone']); ?>">
+
     <button type="submit">Записать</button>
 </form>
 
@@ -38,7 +42,7 @@
         <td><?php echo htmlspecialchars($c['email']); ?></td>
         <td><?php echo htmlspecialchars($c['phone']); ?></td>
         <td>
-            <a href="index.php?page=customers&edit=<?php echo $c['id']; ?>">Правка</a> |
+            <a href="index.php?page=customers&edit=<?php echo $c['id']; ?>">Изменить</a> |
             <a href="index.php?page=customers&delete=<?php echo $c['id']; ?>">Убрать</a>
         </td>
     </tr>

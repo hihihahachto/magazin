@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Магазин</title></head>
+<head><meta charset="utf-8">
+<title>Магазин</title>
+</head>
 <body>
 
 <h1>Магазин "У дома"</h1>

@@ -10,16 +10,16 @@ if ($page == "orders") {
     }
 
     
-    $orders = getOrders($pdo); // по умолчанию все
+    $orders = getOrders($pdo);
 
     if (isset($_GET['fs']) && $_GET['fs'] != "") {
-        // по статусу
+        //по статусу
         $orders = filterOrdersByStatus($pdo, $_GET['fs']);
     } else if (isset($_GET['fc']) && $_GET['fc'] != "") {
-        // по клиенту
+        //по клиенту
         $orders = filterOrdersByCustomer($pdo, (int)$_GET['fc']);
     } else if (isset($_GET['from']) && $_GET['from'] != "" && isset($_GET['to']) && $_GET['to'] != "") {
-        // по датам
+        //по датам
         $orders = filterOrdersByDate($pdo, $_GET['from'], $_GET['to']);
     }
 
