@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Заказ</title></head>
+<head>
+    <meta charset="utf-8">
+    <title>Заказ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
 <body>
 <h1>Заказ №<?php echo $order['id']; ?></h1>
 <a href="index.php?page=orders">К списку</a>
@@ -11,7 +15,7 @@
 <p><b>Состояние:</b> <?php echo htmlspecialchars($order['status']); ?></p>
 
 <p>Состав:</p>
-<table border="1" cellpadding="5">
+<table>
     <tr><th>Наименование</th><th>Кол-во</th><th>Стоимость</th><th>Всего</th></tr>
     <?php foreach ($order['items'] as $item) { ?>
     <tr>

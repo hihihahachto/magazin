@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Новый заказ</title></head>
+<head>
+    <meta charset="utf-8">
+    <title>Новый заказ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
 <body>
 <h1>Оформление заказа</h1>
 <a href="index.php">Назад</a>
@@ -20,7 +24,7 @@
         </select>
     </p>
 
-    <table border="1" cellpadding="5">
+    <table>
         <tr><th>Наименование</th><th>Стоимость</th><th>Есть</th><th>Берём</th></tr>
         <?php foreach ($products as $p) { ?>
         <tr>

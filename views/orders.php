@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Заказы</title></head>
+<head>
+    <meta charset="utf-8">
+    <title>Заказы</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
 <body>
 <h1>Список заказов</h1>
 <a href="index.php">Назад</a> |
@@ -31,7 +35,7 @@
     <a href="index.php?page=orders">Сбросить</a>
 </form>
 
-<table border="1" cellpadding="5">
+<table>
     <tr>
         <th>№</th><th>Покупатель</th><th>Дата</th>
         <th>Сумма</th><th>Статус</th><th>Действия</th>

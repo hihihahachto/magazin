@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8">
-<title>Магазин</title>
+<head>
+    <meta charset="utf-8">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 

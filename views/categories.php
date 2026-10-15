@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Категории</title></head>
+<head>
+    <meta charset="utf-8">
+    <title>Категории</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
 <body>
 <h1>Категории товаров</h1>
 <a href="index.php">Назад</a>
@@ -14,7 +18,7 @@
     <button type="submit">Записать</button>
 </form>
 
-<table border="1" cellpadding="5">
+<table>
     <tr><th>№</th><th>Категория</th><th></th></tr>
     <?php foreach ($categories as $c) { ?>
     <tr>

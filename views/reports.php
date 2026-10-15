@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Сводка</title></head>
+<head>
+    <meta charset="utf-8">
+    <title>Сводка</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
 <body>
 <h1>Сводка по магазину</h1>
 <a href="index.php">Назад</a>
@@ -9,7 +13,7 @@
 <p><b><?php echo number_format($totalRevenue, 2, '.', ' '); ?> руб.</b></p>
 
 <p>2. Продажи по категориям:</p>
-<table border="1" cellpadding="5">
+<table>
     <tr><th>Категория</th><th>Сумма</th></tr>
     <?php foreach ($revenueByCategory as $r) { ?>
     <tr>
@@ -20,7 +24,7 @@
 </table>
 
 <p>3. Хиты продаж (топ-5):</p>
-<table border="1" cellpadding="5">
+<table>
     <tr><th>Наименование</th><th>Кол-во</th></tr>
     <?php foreach ($top5Products as $r) { ?>
     <tr>
@@ -31,7 +35,7 @@
 </table>
 
 <p>4. Лучшие покупатели (топ-5):</p>
-<table border="1" cellpadding="5">
+<table>
     <tr><th>ФИО</th><th>Сумма</th></tr>
     <?php foreach ($top5Customers as $r) { ?>
     <tr>
@@ -42,7 +46,7 @@
 </table>
 
 <p>5. Сколько заказов в каждом состоянии:</p>
-<table border="1" cellpadding="5">
+<table>
     <tr><th>Состояние</th><th>Штук</th></tr>
     <?php foreach ($statusStats as $r) { ?>
     <tr>

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>Склад</title></head>
+<head>
+    <meta charset="utf-8">
+    <title>Склад</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
 <body>
 <h1>Склад</h1>
 <a href="index.php">Назад</a>
@@ -73,7 +77,7 @@
     <button type="submit">Записать</button>
 </form>
 
-<table border="1" cellpadding="5">
+<table>
     <tr>
         <th>№</th><th>Наименование</th><th>Стоимость</th>
         <th>Кол-во</th><th>Категория</th><th></th>
