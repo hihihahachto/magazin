@@ -1,37 +1,25 @@
-/* общие */
 body {
     font-family: Arial, sans-serif;
-    color: #222;
-    max-width: 1000px;
-    margin: 20px auto;
+    max-width: 900px;
+    margin: 30px auto;
     padding: 20px;
-    background: #fff;
+    color: #333;
 }
 
 h1 {
-    color: #2e7d32;
-    border-bottom: 2px solid #c8e6c9;
-    padding-bottom: 10px;
+    text-align: center;
 }
 
-h3 {
-    color: #388e3c;
-    margin-top: 25px;
-}
-
-/* ссылки */
 a {
-    color: #2e7d32;
+    color: #0055aa;
     text-decoration: none;
     margin-right: 10px;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #1b5e20;
 }
 
-/* таблицы */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -39,69 +27,35 @@ table {
 }
 
 th, td {
-    border: 1px solid #c8e6c9;
-    padding: 8px 10px;
+    border: 1px solid #999;
+    padding: 6px 10px;
     text-align: left;
-}
-
-th {
-    background: #e8f5e9;
-    color: #2e7d32;
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    background: #f1f8f1;
-}
-
-/* формы */
-form {
-    margin: 15px 0;
 }
 
 input, select, button {
     padding: 6px 10px;
     margin: 3px 5px 3px 0;
-    border: 1px solid #c8e6c9;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 14px;
-}
-
-input:focus, select:focus {
-    outline: none;
-    border-color: #4caf50;
-    box-shadow: 0 0 3px #a5d6a7;
 }
 
 button {
-    background: #4caf50;
-    color: #fff;
+    background: #eee;
     cursor: pointer;
-    border: none;
 }
 
 button:hover {
-    background: #388e3c;
+    background: #ddd;
 }
 
-/* сообщения */
 .message {
-    padding: 10px;
-    background: #e8f5e9;
-    border-left: 4px solid #4caf50;
+    padding: 8px;
+    background: #f0f0f0;
     margin: 10px 0;
-    color: #2e7d32;
 }
 
 .error {
-    padding: 10px;
-    background: #ffebee;
-    border-left: 4px solid #f44336;
+    padding: 8px;
+    background: #ffe5e5;
     margin: 10px 0;
-    color: #b71c1c;
-}
-
-/* параграфы с фильтрами */
-.filters p {
-    margin: 5px 0;
 }

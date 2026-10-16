@@ -8,7 +8,7 @@
 <body>
 
 <h1>Магазин "У дома"</h1>
-<p>Разделы:</p>
+<h3><p>Разделы:</p></h3>
 
 <a href="index.php?page=categories">Категории товаров</a><br>
 <a href="index.php?page=products">Склад</a><br>
